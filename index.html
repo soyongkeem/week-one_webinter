@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		#anime{weith: 680px; height: 480px;
+			display: block;}
+		body{background: blueviolet;}
+		#mytext, #but {font-size: 4rem;}
+	</style>
+</head>
+<body>
+<video src="video.mp4" id="anime"></video>
+<div id="mytext">영상</div>
+<button id="but">play</button>
+	<script type="text/javascript">
+
+	let playstate = "stop";
+	but.onclick = function(){ 
+		if (playstate == "stop") {
+			anime.play();
+			but.innerHTML = "STOP"
+			but.style.background = "red"
+			playstate = "play"
+		}else if (playstate == "play"){
+			anime.pause();
+			but.innerHTML = "PLAY"
+			but.style.background = "blue"
+			playstate = "stop"
+		}
+	}
+	document.body.style.background = "blue";
+	mytext.innerHTML = "영상이 재생중입니다.";
+
+	</script>
+</body>
+</html>
